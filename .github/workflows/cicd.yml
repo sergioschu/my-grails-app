@@ -20,7 +20,7 @@ jobs:
           java-version: '8'
 
       - name: Compile
-        run: ./grailsw compile
+        run: chmod +x ./grailsw && ./grailsw compile
 
       - name: Run tests
         run: ./grailsw test-app
